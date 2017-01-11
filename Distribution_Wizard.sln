@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distribution_Wizard", "Distribution_Wizard\Distribution_Wizard.csproj", "{B95D6167-6D34-4DCA-9E2D-E6F085B1598F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{828E3DF7-901B-45C6-ABCE-6AA273BF85A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{B925CC51-FC39-4D0E-A576-836A52C2BDBE}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{5F11FFD9-E3E5-41CA-B7F5-1B6EB010F6FC}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\DistributionWizard.json = PublishScripts\Templates\DistributionWizard.json
+		PublishScripts\Templates\DistributionWizard.param.dev.json = PublishScripts\Templates\DistributionWizard.param.dev.json
+	EndProjectSection
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Distribution_Wizard_UML_Diagrams", "Distribution_Wizard_UML_Diagrams\Distribution_Wizard_UML_Diagrams.modelproj", "{5CFD20A2-8238-4BC3-AA10-036E961AE70A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B95D6167-6D34-4DCA-9E2D-E6F085B1598F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95D6167-6D34-4DCA-9E2D-E6F085B1598F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95D6167-6D34-4DCA-9E2D-E6F085B1598F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95D6167-6D34-4DCA-9E2D-E6F085B1598F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CFD20A2-8238-4BC3-AA10-036E961AE70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CFD20A2-8238-4BC3-AA10-036E961AE70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CFD20A2-8238-4BC3-AA10-036E961AE70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CFD20A2-8238-4BC3-AA10-036E961AE70A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B925CC51-FC39-4D0E-A576-836A52C2BDBE} = {828E3DF7-901B-45C6-ABCE-6AA273BF85A3}
+		{5F11FFD9-E3E5-41CA-B7F5-1B6EB010F6FC} = {828E3DF7-901B-45C6-ABCE-6AA273BF85A3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mcritter42.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Distribution_Wizard\\Distribution_Wizard.csproj
+		SccProjectName1 = Distribution_Wizard
+		SccLocalPath1 = Distribution_Wizard
+		SccProjectUniqueName2 = Distribution_Wizard_UML_Diagrams\\Distribution_Wizard_UML_Diagrams.modelproj
+		SccProjectName2 = Distribution_Wizard_UML_Diagrams
+		SccLocalPath2 = Distribution_Wizard_UML_Diagrams
+	EndGlobalSection
+EndGlobal

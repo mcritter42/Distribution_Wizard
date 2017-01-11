@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SelectEmployee">
+  <SequenceDesignerModelMoniker Id="318215ac-4e8b-4488-9e14-d4cd85b70bb9" />
+  <nestedChildShapes>
+    <lifelineShape Id="a617de18-0ec1-4fad-9abc-06e0f71ebf1f" absoluteBounds="1.375, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="4aa3a38b-8726-4185-b088-87419baea50d" LastKnownName="Admin" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="d63745e6-71a5-4ded-a649-7914ebb24fc6" absoluteBounds="0.95, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="4aa3a38b-8726-4185-b088-87419baea50d" LastKnownName="Admin" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="feef7993-1653-40a5-bedd-a8a3b87c6ca4" absoluteBounds="1.375, 1, 0, 7">
+          <lifelineMoniker Id="4aa3a38b-8726-4185-b088-87419baea50d" LastKnownName="Admin" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="325fa889-4b12-49ae-96df-fe0a8d510109" absoluteBounds="3.1979166666666665, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="f1656d7d-15b5-4924-a4f1-d74df053b547" LastKnownName="aSalesperson : Salesperson" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="130bef18-4737-4ed4-b9ae-6a7d4d89bb78" absoluteBounds="2.3660051933924358, 0.6, 1.8138229465484619, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="f1656d7d-15b5-4924-a4f1-d74df053b547" LastKnownName="aSalesperson : Salesperson" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="8fff138f-17c4-45df-8d02-8e63f1f356f6" absoluteBounds="3.1979166666666665, 1, 0, 7">
+          <lifelineMoniker Id="f1656d7d-15b5-4924-a4f1-d74df053b547" LastKnownName="aSalesperson : Salesperson" />
+        </lifelineHoverShape>
+        <umlExecutionSpecificationShape Id="0e694714-4b9d-48e8-9e55-4133052e2f01" absoluteBounds="3.1979166666666665, 1.3958333333333333, 0.15, 0.55" customColor="184, 204, 215" visualStyleMode="Modified">
+          <behaviorExecutionSpecificationMoniker Id="27a720a4-4829-4f40-84a1-5ca8c121c34b" LastKnownName="BehaviorExecutionSpecification1" />
+        </umlExecutionSpecificationShape>
+        <umlExecutionSpecificationShape Id="3f8df5e5-6405-4003-842c-a899e55b4f8e" absoluteBounds="3.1979166666666665, 2.2458333333333331, 0.15, 0.55" customColor="184, 204, 215" visualStyleMode="Modified">
+          <behaviorExecutionSpecificationMoniker Id="ddcaa4b6-a055-4f25-8f50-c555e555a29f" LastKnownName="BehaviorExecutionSpecification2" />
+        </umlExecutionSpecificationShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <asyncMessageConnector edgePoints="[(1.45 : 1.39583333333333); (3.19791666666667 : 1.39583333333333)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <lifelineShapeMoniker Id="a617de18-0ec1-4fad-9abc-06e0f71ebf1f" />
+        <umlExecutionSpecificationShapeMoniker Id="0e694714-4b9d-48e8-9e55-4133052e2f01" />
+      </nodes>
+    </asyncMessageConnector>
+    <asyncMessageConnector edgePoints="[(1.45 : 2.24583333333333); (3.19791666666667 : 2.24583333333333)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+      <relativeChildShapes />
+      <nodes>
+        <lifelineShapeMoniker Id="a617de18-0ec1-4fad-9abc-06e0f71ebf1f" />
+        <umlExecutionSpecificationShapeMoniker Id="3f8df5e5-6405-4003-842c-a899e55b4f8e" />
+      </nodes>
+    </asyncMessageConnector>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>

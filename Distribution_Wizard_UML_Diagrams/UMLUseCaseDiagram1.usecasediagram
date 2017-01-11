@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="30794522-b9d9-40ec-8065-7129c0e30fd4" name="UMLUseCaseDiagram1" linkedPackageId="fea67962-efb3-484c-8c1c-81573b12dc2c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="bbb479f3-d59d-44d8-825d-24878d6af7fd" name="Distribution_Wizard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="222e7e33-f313-4c0a-92fe-c88b65b6e424" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="a0d9194f-515f-4ee7-9bd1-2fc6e879e259" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2cb5dddf-c9a8-453a-b4ee-c36e6732fa43" />
+        <targetEnds>
+          <association Id="1312d3e9-6cb2-412d-8185-5800f3c09603" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Open Distribution_Wizard" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="20cc4ac4-d2df-441c-90bf-50c57a147760" LastKnownName="Open Distribution_Wizard" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6a0af74-9afd-449b-b0a6-89df578d5091" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="33c77d91-6ef6-4401-a9aa-bc19aff90667" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fd6daa0-352a-41af-bf42-d215de0e531c" name="Open Distribution_Wizard" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="14534bbe-c274-48e9-95e2-470c8aefa5b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="00676ccf-d1d7-481a-97c7-8121abad1e94" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="20cc4ac4-d2df-441c-90bf-50c57a147760" name="Open Distribution_Wizard" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7856ec6f-7d6a-4110-b3a7-6fe0f704fc36" />
+        <extendedCases>
+          <extend Id="377f0120-81d3-4720-a702-ce2fc7f52a4f">
+            <useCaseMoniker Id="2bef1010-c58a-4a51-96ae-e4dcd0eb356c" LastKnownName="Adopt Orphan Clients" />
+            <elementDefinition Id="ba092805-8f29-4e84-842f-e6c4f0f68966" />
+          </extend>
+          <extend Id="fe6aeb46-f5e6-4015-93b4-27b4b5d8275b">
+            <useCaseMoniker Id="34383e00-4120-45fd-bd04-5d2978b0cbc0" LastKnownName="Assign overdue Tasks" />
+            <elementDefinition Id="b3134a5e-ec9f-4cf6-ac16-408e851bea3f" />
+          </extend>
+          <extend Id="528ce430-650e-4d8d-9149-83c0e27cff8b">
+            <useCaseMoniker Id="d4774bb9-4249-491c-aeaa-d83ba74ed71e" LastKnownName="Select Employees" />
+            <elementDefinition Id="f30e39a3-0bf4-47ec-a3d4-d227ac01c896" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="bbb479f3-d59d-44d8-825d-24878d6af7fd" LastKnownName="Distribution_Wizard" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2bef1010-c58a-4a51-96ae-e4dcd0eb356c" name="Adopt Orphan Clients" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f08ab39-1c57-4802-9e54-57d392bc6d23" />
+        <extendedCases>
+          <extend Id="5d058a05-f01b-4041-9618-48d0f8d6717e">
+            <useCaseMoniker Id="7aad984d-6699-43ed-8f4e-44a7b0d6199b" LastKnownName="Submit Final Changes" />
+            <elementDefinition Id="b52f2cfc-265e-4975-be7a-e0fbebe68f36" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="12a6d89b-9378-45c7-9d82-f8c7cd95aa0b">
+            <useCaseMoniker Id="7f9b1c86-3613-4f22-81ce-f3fb81d5bf07" LastKnownName="Show percentage completed" />
+            <elementDefinition Id="4f2f367a-9962-4ee9-bdbf-a74465d394ef" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="bbb479f3-d59d-44d8-825d-24878d6af7fd" LastKnownName="Distribution_Wizard" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="34383e00-4120-45fd-bd04-5d2978b0cbc0" name="Assign overdue Tasks" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8eaa7b48-44ba-42a9-ab0b-aa91f3898c9a" />
+        <extendedCases>
+          <extend Id="6276f6b3-da0f-49aa-b495-118943a6e935">
+            <useCaseMoniker Id="7aad984d-6699-43ed-8f4e-44a7b0d6199b" LastKnownName="Submit Final Changes" />
+            <elementDefinition Id="14add530-920e-4d6e-b9f3-195d2eb24521" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="bbb479f3-d59d-44d8-825d-24878d6af7fd" LastKnownName="Distribution_Wizard" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7f9b1c86-3613-4f22-81ce-f3fb81d5bf07" name="Show percentage completed" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="49a8c4b9-838f-4ea2-9956-cf788ffc73de" />
+        <subjects>
+          <subsystemMoniker Id="bbb479f3-d59d-44d8-825d-24878d6af7fd" LastKnownName="Distribution_Wizard" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7aad984d-6699-43ed-8f4e-44a7b0d6199b" name="Submit Final Changes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a1ca6daf-5914-437a-87ad-a024b6d18abd" />
+        <subjects>
+          <subsystemMoniker Id="bbb479f3-d59d-44d8-825d-24878d6af7fd" LastKnownName="Distribution_Wizard" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d4774bb9-4249-491c-aeaa-d83ba74ed71e" name="Select Employees" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="02aa90b2-83b6-443f-920c-e0eae9163c59" />
+        <subjects>
+          <subsystemMoniker Id="bbb479f3-d59d-44d8-825d-24878d6af7fd" LastKnownName="Distribution_Wizard" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="fea67962-efb3-484c-8c1c-81573b12dc2c" name="Distribution_Wizard_UML_Diagrams">
+    <elementDefinition Id="11d25520-0b34-44a8-b9c4-ea1a1371d29e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f9a17e00-bd84-41a9-a429-cba88d9af147">
+        <profileInstance Id="8bd189f6-674b-44ab-9ce3-162aeffa23e9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6b1cbef9-cf02-4fe9-8102-5788fe974682">
+        <profileInstance Id="ce384026-6982-456a-85d3-353abe78a9b9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

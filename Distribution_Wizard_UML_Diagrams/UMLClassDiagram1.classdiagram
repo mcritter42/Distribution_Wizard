@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b85e181e-57e4-48ea-b29c-a3ca83e39edc" name="UMLClassDiagram1" linkedPackageId="3aa2ec35-ae68-4225-bdf0-d1aab900d285" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9a666729-8b1f-46cd-aa8d-9d5a863b9f56" name="SALESPERSON" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="55aaf76f-239d-4e13-8751-2c8c1d75c3d2" />
+        <targetEnds>
+          <association Id="140dcbd6-0021-4867-aaa9-fc09a5043e1a" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7c202693-3fc9-4801-adeb-da4447b09c09" LastKnownName="TASK" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4333e894-0c8d-4131-8f47-9ca77264db81" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7b35030-0da1-4e4d-8bb8-e959814e6a86" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="082cb02e-60c7-4cb6-81d6-c780d8f5f9ed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1007e752-c18d-4d6d-8203-38eab0dc1e1e" name="Lower" value="1">
+                      <elementDefinition Id="f0536538-b4dc-4979-9a1c-8e21620e1014" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="42f588dd-f788-4214-be5f-60c2364a9e68" name="Upper" value="*">
+                      <elementDefinition Id="2ebd09ce-2646-438b-9f15-ce3456f79370" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3930060e-6455-4219-ae7f-d716cd2b97cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8322db4e-82c0-4618-911c-6499331c3bec" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="b51c7847-1571-44ba-b7f2-66908da84dc6" name="VIEW_TASKS" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0ef51e84-7594-4573-b490-92910b2c2bc8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e003cb90-266e-4828-b2f1-819b942a70f0" name="CUSTOMER" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="040b35a8-a820-44f3-beed-773af3fe38ac" />
+        <targetEnds>
+          <association Id="eeccd1c8-7dcc-4201-b19f-530bdf041641" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7c202693-3fc9-4801-adeb-da4447b09c09" LastKnownName="TASK" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a26e45d4-e9f3-4ba3-b6b5-9af58eacf7ff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2589fc3a-42e9-4351-87ab-30709bda7ef2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2a358bc1-3979-4005-b29b-da0347cac19b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="65349287-2eeb-48d9-82a9-b19b01637037" name="Lower" value="1">
+                      <elementDefinition Id="b6a85372-a4c4-4c10-bd03-c99346e9aacb" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="acf1d507-bc0b-452d-8424-c7d49acb5d19" name="Upper" value="*">
+                      <elementDefinition Id="86c48ac5-fdf4-4232-b2d4-c5e6845abd15" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="929ef781-af3e-451d-9fc1-b929c8b9e0c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f89c2a8-3a20-4d84-abb9-140f60b7cac4" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="4fa167c3-ef69-4143-89ca-2afc1bbceaf0" name="CUST_ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="de269e34-6b88-49aa-b2bc-4f3afc2ba468" />
+          </property>
+          <property Id="51f99529-0807-40d2-b4fe-a7169df16017" name="STATUS" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a662ed71-08bc-4286-a205-ee844a8cd43f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1c1653b6-1755-4033-9203-e8c81e47a084" name="UPDATE_STATUS" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d2ce703-980f-4aa9-88ea-11d4f4f40a73" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2991fe1a-87cd-4fdd-bab3-dc0abae50943" name="PERSON" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bb14ea5e-9a44-41c4-855b-533db0a70bf6" />
+        <generalsInternal>
+          <generalization Id="44297e6d-b47c-4dda-81b3-0968e7c29802" isSubstitutable="false">
+            <classMoniker Id="e003cb90-266e-4828-b2f1-819b942a70f0" LastKnownName="CUSTOMER" />
+            <elementDefinition Id="b2f57007-229e-4688-8f42-fa3d8d871824" />
+          </generalization>
+          <generalization Id="c85da13c-9a41-472f-9241-e257948d1699" isSubstitutable="false">
+            <classMoniker Id="255c85f9-751f-4b78-ab28-f239cd318fbb" LastKnownName="EMPLOYEE" />
+            <elementDefinition Id="b8a04be7-a9fc-488c-99d0-b0eb7c197788" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="8be195af-0523-470d-848d-a46041c0f32a" name="F_NAME" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dfe0b224-302b-4394-884e-4296e3206a5f" />
+          </property>
+          <property Id="62c65bc5-10e8-4d6e-980e-9b9dc1b36edf" name="L_NAME" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34b69443-a65b-4df0-a1ad-71b6762ec245" />
+          </property>
+          <property Id="098093bd-2851-4317-91ae-889c635396fc" name="PHONE" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6795b0a8-14be-4327-81af-7f10b9a4827f" />
+          </property>
+          <property Id="ea41fc78-bb08-4ada-a626-3b89fa90c994" name="ADDRESS" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="75b3b33f-30f6-491f-8429-f7de52ee3122" />
+          </property>
+          <property Id="6821e665-bf8c-4336-9125-fd44f107551f" name="EMAIL" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9aca70d2-316b-434d-ada2-506d08fe43b2" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="784a7134-8d36-41ba-b416-a11816773756" name="UPDATE_INFO" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af415fde-bdce-41b8-93ee-2845259a9e3d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7c202693-3fc9-4801-adeb-da4447b09c09" name="TASK" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bec3d3ad-9a34-41d4-ac0d-1484c98b4880" />
+        <ownedAttributesInternal>
+          <property Id="7e15972c-9088-4cb0-a081-ad453c51c203" name="CUST_ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a99a55a1-0923-4d7d-b6c2-d12b2687b96c" />
+          </property>
+          <property Id="ab75fd17-9195-4dfe-a5b9-bb6f3913df3b" name="TASK_ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="52d2814d-6f5b-436c-95c3-29bb7b153a7f" />
+          </property>
+          <property Id="5e1e6100-f2c4-44c2-a50c-e942d4602ec7" name="TASK_NAME" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc26de9f-17a1-498b-9d30-5cf8fd633592" />
+          </property>
+          <property Id="35ba6e91-5e29-45ca-b2ac-e9b1285963f5" name="DUE_DATE" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7d28ffde-3656-48cc-82dd-611746fd5414" />
+          </property>
+          <property Id="d9210f4d-6503-4787-830b-c2f3baab061a" name="EMP_ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1a12ce66-be47-430d-83d3-b089f92e616c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="eb7cb469-38df-4fe9-b9ca-2b2dc52fe0a6" name="ADD_TASK" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0ca7b51f-95bf-437f-bd6b-b9c479c9d6e1" />
+          </operation>
+          <operation Id="7eb66cff-0938-4193-bd70-22ca8cedf1ff" name="EDIT_TASK" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="defa249c-b662-4c51-9a58-98ffb5feaaca" />
+          </operation>
+          <operation Id="4e503a58-38d0-47df-b2b8-5e83017bc88e" name="DELETE_TASK" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a4ce3821-2607-48ed-981c-2f9443541d05" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="255c85f9-751f-4b78-ab28-f239cd318fbb" name="EMPLOYEE" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="49eb185e-43be-41bd-add3-f5e855029fc1" />
+        <generalsInternal>
+          <generalization Id="a02d4ce2-f02c-464b-be72-8563794ed9d1" isSubstitutable="false">
+            <classMoniker Id="f251721f-8f09-4f22-b2b1-51e3976e001f" LastKnownName="MANAGER" />
+            <elementDefinition Id="fe2b337f-93d0-45f0-8baa-faa06654231a" />
+          </generalization>
+          <generalization Id="e4ab87be-bc84-4cf7-acec-037982852fd6" isSubstitutable="false">
+            <classMoniker Id="9a666729-8b1f-46cd-aa8d-9d5a863b9f56" LastKnownName="SALESPERSON" />
+            <elementDefinition Id="ad7d6ce3-9904-49db-8cdc-95ea30765bdc" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="ce742576-b02f-4d66-b499-46655da5ac55" name="EMP_ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12edc0c2-2b1f-404b-8c1f-fe756a4c7194" />
+          </property>
+          <property Id="0e421b1b-8e04-4427-88a9-07b341ecab4e" name="END_DATE" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="73a35309-61bc-4821-ba05-774335de3d83" />
+          </property>
+          <property Id="a0b30310-1053-42a4-8a0a-3bad523252a6" name="START_DATE" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b267c13f-5b63-450b-a911-53ed34b6cfb9" />
+          </property>
+          <property Id="6f4ea06e-4479-476c-9df0-5e593109ec05" name="POSITION" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b8c741b3-916c-44a1-8686-ee15a1dad221" />
+          </property>
+          <property Id="bc4c87e2-79cf-4ab0-9dd2-517faf40e5c1" name="STATUS" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="798b80f8-f391-4821-9b9f-944dafe2a793" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="2bd85a26-5792-42bd-83ad-aee21e67019d" name="UPDATE_POSITION" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d12dfb85-d60e-4104-87a2-50d5167a9c65" />
+          </operation>
+          <operation Id="a776c158-13d7-4a4b-8bdb-e488b1b3b396" name="UPDATE_STATUS" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="59dcbe00-8645-4f0f-9339-3a110a107455" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f251721f-8f09-4f22-b2b1-51e3976e001f" name="MANAGER" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eac80d27-988b-4df5-b1d3-b633892e80f1" />
+        <targetEnds>
+          <association Id="b392312d-6cad-4acd-9545-21fd5642e70c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9a666729-8b1f-46cd-aa8d-9d5a863b9f56" LastKnownName="SALESPERSON" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87f9685b-af21-476a-ad35-2f8a099ce16f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8ddd2fe4-0da5-4e20-a9f6-58c943192c97" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="89bb0589-694d-47de-a366-290ed01c2510" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="82351c7e-33e0-45e3-bf88-10cadcc22447" name="Lower" value="1">
+                      <elementDefinition Id="172fa2b6-91ba-4089-96e6-d0fbccaf835d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d0222158-1c3a-432f-a730-2c004539c6d5" name="Upper" value="*">
+                      <elementDefinition Id="71c805f1-d618-4184-96dd-76db38ef7330" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f5e8d408-8f0a-4c4d-9c9f-f4ef52b7b4b3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4079b40a-2f7e-4b90-9b1e-41c4e7c90881" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="dd30fe23-05bb-4e71-8bc8-97bfd8779d37" name="VIEW_SALESPERSON" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7242458b-0a0e-4196-b024-e48d1eb93330" />
+          </operation>
+          <operation Id="b0d12c31-cbf7-4d26-bef9-e285ed99a9f8" name="REASSIGN" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="31c96b96-dcd3-4ab3-9fc7-06e0b2fa0f34" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="3aa2ec35-ae68-4225-bdf0-d1aab900d285" name="Distribution_Wizard_UML_Diagrams">
+    <elementDefinition Id="11d25520-0b34-44a8-b9c4-ea1a1371d29e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ae3b2061-ce34-4c3f-816a-58d292542aee">
+        <profileInstance Id="bf29caf1-5520-46de-ab7e-114ffb902c86" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4c8e1725-99c8-480d-bd06-0a70fb1f2a53">
+        <profileInstance Id="ca4f5bfa-302b-4e3c-b0f8-0eb917e27e48" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

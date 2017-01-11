@@ -1,0 +1,32 @@
+{
+  "siteName": {
+    "value": "DistributionWizard"
+  },
+  "hostingPlanName": {
+    "value": "DistributionWizard"
+  },
+  "siteLocation": {
+    "value": "Central US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "serverName": {
+    "value": "cidm4390-server"
+  },
+  "serverLocation": {
+    "value": "West US"
+  },
+  "administratorLogin": {
+    "value": "mcritter42"
+  },
+  "administratorLoginPassword": {
+    "value": "Mcrit0501!"
+  },
+  "databaseName": {
+    "value": "DistributionWizard_db"
+  }
+}

@@ -1,0 +1,44 @@
+﻿//Mark Ritter
+@model IList<Distribution_Wizard.Models.employee>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //List<Distribution_Wizard.Models.Client> List_clients = Model.ToList()[0] as List<Distribution_Wizard.Models.Client>;
+    //List<Distribution_Wizard.Models.employee> List_employee = Model.ToList()[0] as List<Distribution_Wizard.Models.employee>;
+
+ }
+    <div id="salesmen-box" class="salesmen-box">
+        <div class="select_title">
+            <label>Select Employee</label>
+        </div>
+        <ol class="salesmen-list">
+            @foreach (var employee in (List<Distribution_Wizard.Models.employee>)Model)
+            {
+                <li class="list_item" id="terminated_salesperson_list">
+                    <label class="row_item">@employee.first_name</label>
+                    <label class="row_item">@employee.last_name</label>
+                    <input type="radio" name="salesmen_terminated" value="@employee.first_name @employee.last_name / @employee.Id" class="percentBox" />
+                </li>
+            }
+        </ol>
+
+
+    </div>
+<input type="button" class="button" style="background-color: red;" value="Terminate" disabled="disabled" id="reassure_button" />
+
+
+    <div id="reassureDialog" class="ui-dialog" title="Caution" style="display:none;">
+        <br />
+        <p>Any changes made will be permanent. Do you want to continue?</p>
+        @using (Html.BeginForm("after_termination_employee_table", "Index"))
+        {
+            @Html.Hidden("Terminated_employee_name", "Terminated_employee_name")
+            @Html.Hidden("Terminated_employee_id", "Terminated_employee_id")
+            <input type="submit" class="button" value="Yes" id="start_button" />
+            <input type="button" class="button" value="No" id="no_btn" />
+        }
+</div>
+
+    
+
+

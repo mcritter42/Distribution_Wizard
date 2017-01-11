@@ -1,0 +1,58 @@
+﻿//Mark Ritter
+@model List<Distribution_Wizard.Models.employee>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //List<Distribution_Wizard.Models.Client> List_clients = Model.ToList()[0] as List<Distribution_Wizard.Models.Client>;
+    //List<Distribution_Wizard.Models.employee> List_employee = Model.ToList()[0] as List<Distribution_Wizard.Models.employee>;
+
+}
+
+    <div id="dialog" class="ui-dialog" title="Drive360® Client Reassignment Tool">
+
+        <div class="title">
+            <label>Terminated Employee: @ViewBag.termianted_name</label>
+            <label>Number of Clients: @ViewBag.showTotal</label>
+            <br />
+            <input type="hidden" id="total_clients_value" value="@ViewBag.showTotal" />
+            <input type="hidden" id="terminated_id_hid" value="@ViewBag.termianted_ID" />
+            <div style="display:inline-flex;">
+                <div id="salesmen-box" class="salesmen-box">
+                    <div  class="select_title">
+                        <label>Select Employee</label>
+                    </div>
+                    <ol class="salesmen-list">
+                        @foreach (var employees in (List<Distribution_Wizard.Models.employee>)Model)
+            {
+                            <li class="list_item">
+                                <label class="row_item">@employees.first_name</label>
+                                <label class="row_item">@employees.last_name</label>
+                                <input id="@employees.Id" type="text" name="Percentages" maxlength="3" class="percentBox" />
+                                <label>%</label>
+                            </li>
+                        }
+                    </ol>
+                </div>
+
+            </div>
+
+            <div id="progress_box" class="progress_box">
+
+
+                <label class="progress_label">Total Completion</label>
+                <label id="percentTotal">0</label><label>/100%</label>
+                <div><progress id="salespersonProgBar" value="0" max="100"></progress>
+                 </div>
+            </div>
+            <br />
+        </div>
+        <form action="Submit" method="post">
+            @Html.Hidden("json", "json")
+            @Html.Hidden("terminated_id", "terminated_id")
+            @Html.Hidden("total_clients", "total_clients")
+            <input type="submit" class="button" id="btn_submit" value="Submit" />
+        </form>
+            
+        
+    </div>
+

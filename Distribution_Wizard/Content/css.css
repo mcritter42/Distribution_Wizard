@@ -1,0 +1,117 @@
+﻿body {
+}
+
+label{
+    margin:5px;
+    color: black;
+}
+.client-box {
+    margin: 5px;
+    width: 250px;
+    height: 200px;
+    border: solid 2px black;
+    display:block;
+    border-radius: 2px;
+}
+.slider-box {
+    width: 200px;
+
+    display:inline-block;
+    padding: 10px;
+    text-align: right;
+}
+
+.salesmen-box {
+    margin: 5px;
+    width: 260px;
+    height: 250px;
+    border: solid 2px black;
+    display: block;
+    text-align: left;
+    padding: 0px;
+    border-radius: 2px;
+}
+
+.select_title{
+    border-bottom:solid 2px black;
+    width: 100%;
+    margin: 0px;
+    padding: 1.5px;
+    text-align: center;
+    background-color: orangered;
+    border-radius: 2px;
+}
+.progress-box {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.button { 
+    padding: 5px;
+    border: none;
+    width: 100px;
+    font-size: 18px;
+    background-color: #5db000;
+    box-shadow: rgba(0,0,0,0.38) 1px 1px;
+    border-radius: 2px;
+}
+
+.progress_label {
+    font-size: 12px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color:#eee;
+    border-radius:2px;
+    /*box-shadow:0 2px 5px rgba(0, 0, 0, 2.5) inset;*/
+}
+
+progress[value]::-webkit-progress-value{
+    background-color:#1976c8;
+}
+
+.upperBox {
+    display: inline;
+    font-size: 15px;
+    text-align: left;
+    
+}
+
+.title{
+    display: inline;
+    text-align: left;
+    color: #1976c8;
+}
+
+.percentBox {
+    width: 40px;
+    display: inline-block;
+    text-align: right;
+}
+
+.salesmen-list {
+    overflow: scroll;
+    height: 200px;
+    overflow-x: hidden;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.list_item {
+width: 250px;
+border-bottom: 1px solid black;
+margin:0px;
+}
+
+.row_item {
+    width: 70px;
+    margin:0px;
+    margin-left:3px;
+   color: black;
+    
+}
+
+.ui-dialog{
+    text-align: center;
+
+}
